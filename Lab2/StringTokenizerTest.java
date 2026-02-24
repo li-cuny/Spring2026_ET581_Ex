@@ -1,5 +1,5 @@
 package Lab2;
-import java.util.StringTokenizer;
+import java.util.StringTokenizer; // ctrl + click
 public class StringTokenizerTest {
     public static void main(String[] args) {
         // invoke a method
