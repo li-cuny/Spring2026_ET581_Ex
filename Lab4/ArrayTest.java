@@ -24,6 +24,22 @@ public class ArrayTest{
             System.out.println("index: " + index + " value at index: " + a1[index]);
         }
     }
+    static void printInReverseOrder(){
+        String[] s = new String[] {"first","second","third"};
+        for(int index = s.length - 1; index >= 0; index--){
+            System.out.println( s [index]);
+        }
+        // System.out.println(s[4]);
+    }
+    static void forEachLoop(){
+        int[] a = {10, 20, 30,40};
+        for( int e : a){
+            System.out.println(e);
+        }
+    }
+    static void passingArrayToMethod( int[] array){ // array { 1 5 7 }
+        System.out.println(Arrays.toString(array));
+    }
     public static void main(String[] args){
         // int[] array1 = new int[3]; // [0 0 0 ]
         // //System.out.println(array1[0]);
@@ -37,6 +53,10 @@ public class ArrayTest{
 
         // arrayLengthTest();
         // assignmentArrayByIndex();
-        printArray();
+        // printArray();
+        // printInReverseOrder();
+        // forEachLoop();
+        int[] array = { 1,5, 7};
+        passingArrayToMethod(array);
     }
 }
