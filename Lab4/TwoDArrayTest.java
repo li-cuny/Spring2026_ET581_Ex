@@ -35,9 +35,55 @@ public class TwoDArrayTest{
         }
         System.out.println(Arrays.deepToString(s));
     }
+    public static void twoDArrayPrint(int[][] a){
+        for (int i =0; i < a[0].length; i ++){ // a[0] = {1,2,3}
+            System.out.print(a[0][i] + " ");
+        }
+        System.out.println();
+        for (int i =0; i < a[1].length; i ++){ // a[1] = {4,5,6}
+            System.out.print(a[1][i] + " ");
+        }
+        System.out.println();
+        for (int i =0; i < a[2].length; i ++){ // a[2] = {7,8,9}
+            System.out.print(a[2][i] + " ");
+        }
+        System.out.println();
+
+
+    }
+    public static void twoDArrayPrintWithNestedFor(int[][] a) {
+        for (int r = 0; r<a.length; r++){ // r from 0 -> 2
+            for (int i =0; i < a[r].length; i ++){ 
+                System.out.print(a[r][i] + " ");
+            }
+            System.out.println();
+        }
+
+    }
+    public static void printStar(){
+        for (int i =0; i<5; i++ ) {
+            System.out.print("* ");
+        }
+        System.out.print("\n");
+    }
     public static void main(String[] args){
         // twoDArrayCration();
         // twoDArrayAssignment();
-        twoDArrayAssignmentWithNestedLoop();
+        // twoDArrayAssignmentWithNestedLoop();
+        int[][] a = {
+            {1,2,3},
+            {4,5,6},
+            {7,8,9}
+        };
+        // twoDArrayPrint(a);
+        // twoDArrayPrintWithNestedFor(a);
+        for (int i =0;i<5;i++){
+            for (int j =0; j<5; j++ ) {
+                System.out.print("* ");
+            }
+            System.out.print("\n");
+        }
+        
+      
     }
 }
