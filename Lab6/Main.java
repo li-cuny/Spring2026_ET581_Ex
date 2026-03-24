@@ -1,3 +1,5 @@
+import Lab7.project.src.edu.cuny.qcc.Student;
+
 public class Main {
 
     public static void classAndObject(){
